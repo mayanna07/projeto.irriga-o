@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Irrigação com ESP32</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sistema de Irrigação com ESP32</h1>
+    <span>
+        Allana Carla Marques de Araujo • Eduardo Rodrigo Aires • Rhamayanna Diniz Lima<br>
+        IFRN – Campus Parnamirim
+    </span>
+</header>
+
+<nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#desenvolvimento">Desenvolvimento</a>
+    <a href="#conclusao">Conclusão</a>
+</nav>
+
+<section id="introducao">
+    <h2>Introdução</h2>
+    <p>
+        O presente trabalho aborda o desenvolvimento de um sistema automatizado de irrigação
+        utilizando a placa microcontroladora ESP32, lançada em 2016 e amplamente reconhecida
+        por sua versatilidade e conectividade Wi-Fi e Bluetooth integradas. O projeto tem como
+        foco a aplicação prática da automação e da Internet das Coisas (IoT) no controle da
+        umidade do solo em um jardim real, aliando tecnologia, sustentabilidade e uso racional
+        dos recursos naturais.
+    </p>
+    <p>
+        A proposta surge diante da crescente preocupação com a escassez de água e da
+        necessidade de otimizar seu uso, especialmente em sistemas de irrigação.
+    </p>
+</section>
+
+<section id="desenvolvimento">
+    <h2>Desenvolvimento</h2>
+    <p>
+        O sistema desenvolvido consiste na integração da placa ESP32 com sensores de umidade
+        do solo, temperatura ambiente e detecção de chuva, permitindo a coleta contínua de
+        dados ambientais. Com base nessas informações, o microcontrolador é responsável por
+        tomar decisões automáticas, acionando uma válvula solenóide de 12 Vcc apenas quando a
+        umidade do solo estiver abaixo do nível ideal e não houver ocorrência de chuva.
+    </p>
+    <p>
+        A execução do projeto ocorre em um jardim real, possibilitando a avaliação do
+        funcionamento do sistema em condições práticas. Os dados coletados pelos sensores
+        são registrados em arquivos no formato CSV e exibidos em gráficos por meio de um
+        navegador de internet, utilizando a biblioteca Dygraphs.
+    </p>
+    <p>
+        O desenvolvimento foi realizado de forma progressiva, iniciando-se com estudos
+        bibliográficos, seguido pela montagem do protótipo físico, programação da ESP32 e
+        realização de testes práticos, considerando aspectos de sustentabilidade, eficiência
+        energética e confiabilidade.
+    </p>
+</section>
+
+<section id="conclusao">
+    <h2>Conclusão</h2>
+    <p>
+        Com a implementação do sistema de irrigação automatizado com ESP32, espera-se obter
+        uma solução funcional e eficiente para o controle da umidade do solo em um jardim real.
+        O projeto demonstra como a automação e a Internet das Coisas podem ser aplicadas para
+        reduzir o consumo excessivo de água e contribuir para a preservação dos recursos
+        hídricos.
+    </p>
+    <p>
+        Além de atender aos objetivos propostos, o trabalho reforça a importância da aplicação
+        prática dos conhecimentos adquiridos em eletrônica, automação e programação, bem
+        como a difusão da filosofia do “Faça Você Mesmo” (DIY).
+    </p>
+    <p>
+        Projeto desenvolvido por Allana Carla Marques de Araujo, Eduardo Rodrigo Aires e
+        Rhamayanna Diniz Lima, sob orientação do Prof. Dr. Gustavo Fernandes de Lima e
+        coorientação do Prof. Jurandy Martins Soares Junior.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 – Projeto de Prática Profissional | IFRN</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

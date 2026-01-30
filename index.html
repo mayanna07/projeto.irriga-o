@@ -2,89 +2,231 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Sistema de Irrigação Automatizado com ESP32</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Irrigação com ESP32</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Sistema de Irrigação com ESP32</h1>
-    <span>
-        Allana Carla Marques de Araujo • Eduardo Rodrigo Aires • Rhamayanna Diniz Lima<br>
-        IFRN – Campus Parnamirim
-    </span>
+    <h1>Sistema de Irrigação Automatizado com ESP32</h1>
+
+    <p class="autores">
+        Allana Carla Marques de Araujo<br>
+        Eduardo Rodrigues Aires<br>
+        Rhamayanna Diniz Lima
+    </p>
+
+    <p class="orientacao">
+        Orientação: Prof. Dr. Gustavo Fernandes de Lima<br>
+        Coorientação: Prof. Jurandy Martins Soares Junior
+    </p>
 </header>
 
-<nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#desenvolvimento">Desenvolvimento</a>
-    <a href="#conclusao">Conclusão</a>
-</nav>
+<main>
 
-<section id="introducao">
+<section>
     <h2>Introdução</h2>
+
     <p>
-        O presente trabalho aborda o desenvolvimento de um sistema automatizado de irrigação
-        utilizando a placa microcontroladora ESP32, lançada em 2016 e amplamente reconhecida
-        por sua versatilidade e conectividade Wi-Fi e Bluetooth integradas. O projeto tem como
-        foco a aplicação prática da automação e da Internet das Coisas (IoT) no controle da
-        umidade do solo em um jardim real, aliando tecnologia, sustentabilidade e uso racional
-        dos recursos naturais.
+        Este projeto apresenta o desenvolvimento de um sistema automatizado de irrigação utilizando
+        a placa microcontroladora ESP32, amplamente reconhecida por sua versatilidade, baixo custo e
+        conectividade integrada via Wi-Fi e Bluetooth. A proposta aplica conceitos de automação e
+        Internet das Coisas (IoT) para o controle eficiente da umidade do solo em um jardim real,
+        promovendo o uso racional da água e a redução de desperdícios.
     </p>
+
     <p>
-        A proposta surge diante da crescente preocupação com a escassez de água e da
-        necessidade de otimizar seu uso, especialmente em sistemas de irrigação.
+        Diante da crescente preocupação com a escassez dos recursos hídricos, torna-se essencial o
+        desenvolvimento de soluções tecnológicas que auxiliem na otimização de sistemas de
+        irrigação. Nesse contexto, o projeto busca unir tecnologia, sustentabilidade e praticidade,
+        oferecendo uma alternativa automatizada e funcional para o manejo adequado da irrigação.
     </p>
 </section>
 
-<section id="desenvolvimento">
-    <h2>Desenvolvimento</h2>
+<section>
+    <h2>Objetivo do Projeto</h2>
+
     <p>
-        O sistema desenvolvido consiste na integração da placa ESP32 com sensores de umidade
-        do solo, temperatura ambiente e detecção de chuva, permitindo a coleta contínua de
-        dados ambientais. Com base nessas informações, o microcontrolador é responsável por
-        tomar decisões automáticas, acionando uma válvula solenóide de 12 Vcc apenas quando a
-        umidade do solo estiver abaixo do nível ideal e não houver ocorrência de chuva.
-    </p>
-    <p>
-        A execução do projeto ocorre em um jardim real, possibilitando a avaliação do
-        funcionamento do sistema em condições práticas. Os dados coletados pelos sensores
-        são registrados em arquivos no formato CSV e exibidos em gráficos por meio de um
-        navegador de internet, utilizando a biblioteca Dygraphs.
-    </p>
-    <p>
-        O desenvolvimento foi realizado de forma progressiva, iniciando-se com estudos
-        bibliográficos, seguido pela montagem do protótipo físico, programação da ESP32 e
-        realização de testes práticos, considerando aspectos de sustentabilidade, eficiência
-        energética e confiabilidade.
+        O objetivo principal deste projeto é desenvolver um sistema capaz de automatizar o processo
+        de irrigação, acionando a liberação de água apenas quando necessário, de acordo com as
+        condições do ambiente. Além disso, o sistema visa possibilitar o monitoramento remoto dos
+        dados coletados, facilitando a análise do funcionamento da irrigação ao longo do tempo.
     </p>
 </section>
 
-<section id="conclusao">
+<section>
+    <h2>Descrição do Sistema</h2>
+
+    <p>
+        O sistema é composto pela integração da placa ESP32 com sensores de umidade do solo,
+        temperatura ambiente e detecção de chuva, permitindo a coleta contínua de dados ambientais.
+        Com base nessas informações, o microcontrolador realiza decisões automáticas, acionando uma
+        válvula solenoide de 12 Vcc apenas quando a umidade do solo estiver abaixo do nível ideal e
+        não houver ocorrência de chuva.
+    </p>
+
+    <p>
+        Essa abordagem garante uma irrigação mais precisa, eficiente e sustentável, evitando o uso
+        excessivo de água.
+    </p>
+
+    <div class="galeria">
+        <figure>
+            <img src="images/placa.jpg" alt="Placa do sistema">
+            <figcaption>Figura 1 – Placa de circuito impresso do sistema de irrigação automatizado.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/trilhas.jpg" alt="Trilhas da placa">
+            <figcaption>Figura 2 – Vista inferior da placa de circuito impresso.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/esp32.webp" alt="ESP32">
+            <figcaption>Figura 3 – Microcontrolador ESP32.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/umidade-solo.PNG" alt="Sensor de umidade">
+            <figcaption>Figura 4 – Sensor de umidade do solo.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/nivel-agua.jpg" alt="Sensor de nível de água">
+            <figcaption>Figura 5 – Sensor de nível de água.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/dht11.jpg" alt="Sensor DHT11">
+            <figcaption>Figura 6 – Sensor de temperatura e umidade do ar (DHT11).</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section>
+    <h2>Interface Web e Monitoramento</h2>
+
+    <p>
+        Os dados coletados pelos sensores são armazenados em arquivos no formato CSV e
+        disponibilizados em uma interface web desenvolvida em React.js, acessível por meio de um
+        navegador de internet. A interface permite o acompanhamento remoto do sistema,
+        apresentando os dados de forma organizada e visual, facilitando a análise do desempenho da
+        irrigação ao longo do tempo.
+    </p>
+
+    <p class="link">
+        A interface web do sistema pode ser acessada em:<br>
+        <a href="https://irrigador-automatizado.vercel.app/" target="_blank">
+            https://irrigador-automatizado.vercel.app/
+        </a>
+    </p>
+</section>
+
+<section>
+    <h2>Testes, Resultados e Análise</h2>
+
+    <h3>Testes da Alimentação do Sistema</h3>
+    <p>
+        Durante a fase de testes, ao conectar a fonte de alimentação de 12 Vcc ao circuito,
+        observou-se que os sensores foram energizados corretamente. No entanto, o ESP32 não
+        apresentou sinais de funcionamento, como inicialização ou comunicação com o computador,
+        indicando uma possível falha no circuito de alimentação.
+    </p>
+
+    <h3>Análise da Alimentação</h3>
+    <p>
+        Foram realizadas medições com multímetro em pontos estratégicos do circuito. Verificou-se
+        uma tensão de entrada de aproximadamente 11,60 V, valor adequado para o sistema. A mesma
+        tensão foi observada na entrada do MOSFET, confirmando que a alimentação chegava corretamente
+        ao estágio de potência.
+    </p>
+
+    <p>
+        Entretanto, ao medir a saída do regulador de tensão 7805, responsável por fornecer 5 Vcc ao
+        ESP32, foi identificado um valor de aproximadamente 2,6 V, insuficiente para o
+        funcionamento adequado do microcontrolador.
+    </p>
+
+    <h3>Hipóteses Levantadas</h3>
+    <ul>
+        <li>Defeito no regulador de tensão 7805</li>
+        <li>Sobrecarga na saída do regulador</li>
+        <li>Ausência de capacitores de filtragem</li>
+        <li>Aquecimento excessivo do componente devido à dissipação térmica</li>
+    </ul>
+
+    <h3>Procedimentos Complementares</h3>
+    <p>
+        Foram realizados testes adicionais com aumento da tensão de entrada para 15 V, momento em
+        que o regulador passou a fornecer os 5 V esperados. Contudo, após desligar e religar o
+        sistema, a tensão de saída voltou a cair para aproximadamente 2,6 V, confirmando a
+        instabilidade do componente.
+    </p>
+
+    <p>
+        Diante disso, optou-se pela remoção do regulador de tensão da placa para testes individuais.
+    </p>
+
+    <h3>Solução Adotada</h3>
+    <p>
+        Após a substituição do regulador de tensão 7805 por outro componente do mesmo modelo, novos
+        testes foram realizados. Verificou-se que, com 12 V na entrada, o regulador passou a
+        fornecer 5 V estáveis na saída, conforme especificado em datasheet.
+    </p>
+
+    <p>
+        Com isso, o ESP32 passou a operar normalmente, confirmando que a falha estava relacionada
+        ao defeito do regulador anteriormente utilizado.
+    </p>
+
+    <h3>Testes do Acionamento da Válvula</h3>
+    <p>
+        Após a estabilização da alimentação, foram realizados testes no sistema de acionamento da
+        válvula solenoide. Observou-se que, apesar do sistema estar corretamente alimentado e dos
+        sensores funcionarem normalmente, a válvula não foi acionada, mesmo com o ESP32 enviando
+        corretamente o sinal de controle.
+    </p>
+
+    <p>
+        O acionamento foi realizado por meio de um MOSFET IRF640, utilizando um optoacoplador para
+        isolamento elétrico e envio de 5 V ao gate do MOSFET. Apesar dos testes prévios do componente
+        em protoboard e das medições realizadas com multímetro, o acionamento da válvula não ocorreu
+        conforme o esperado.
+    </p>
+
+    <h3>Considerações Parciais</h3>
+    <p>
+        Com base nos testes realizados, conclui-se que o sistema apresenta funcionamento parcial,
+        com êxito na alimentação, leitura dos sensores e envio dos sinais de controle pelo ESP32.
+        Entretanto, o estágio de potência responsável pelo acionamento da válvula solenoide
+        necessita de análises adicionais, a serem realizadas em ambiente de laboratório, para a
+        identificação precisa da causa da falha.
+    </p>
+</section>
+
+<section>
     <h2>Conclusão</h2>
+
     <p>
-        Com a implementação do sistema de irrigação automatizado com ESP32, espera-se obter
-        uma solução funcional e eficiente para o controle da umidade do solo em um jardim real.
-        O projeto demonstra como a automação e a Internet das Coisas podem ser aplicadas para
-        reduzir o consumo excessivo de água e contribuir para a preservação dos recursos
-        hídricos.
+        O sistema de irrigação automatizado com ESP32 demonstra o potencial da automação e da IoT
+        na otimização do uso da água em ambientes reais. O projeto contribui para a redução do
+        consumo excessivo de recursos hídricos, além de facilitar o monitoramento e a análise do
+        processo de irrigação por meio de uma interface web.
     </p>
+
     <p>
-        Além de atender aos objetivos propostos, o trabalho reforça a importância da aplicação
-        prática dos conhecimentos adquiridos em eletrônica, automação e programação, bem
-        como a difusão da filosofia do “Faça Você Mesmo” (DIY).
-    </p>
-    <p>
-        Projeto desenvolvido por Allana Carla Marques de Araujo, Eduardo Rodrigo Aires e
-        Rhamayanna Diniz Lima, sob orientação do Prof. Dr. Gustavo Fernandes de Lima e
-        coorientação do Prof. Jurandy Martins Soares Junior.
+        Além dos resultados técnicos, o projeto reforça a importância da aplicação prática dos
+        conhecimentos adquiridos em eletrônica, automação e programação, evidenciando a viabilidade
+        de soluções tecnológicas acessíveis, sustentáveis e aplicáveis ao cotidiano.
     </p>
 </section>
+
+</main>
 
 <footer>
-    <p>© 2026 – Projeto de Prática Profissional | IFRN</p>
+    <p>Projeto desenvolvido por Allana Carla Marques de Araujo, Eduardo Rodrigues Aires e
+        Rhamayanna Diniz Lima.</p>
 </footer>
 
 <script src="script.js"></script>

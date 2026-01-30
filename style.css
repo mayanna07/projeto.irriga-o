@@ -6,52 +6,78 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    background-color: #2e7d32;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
+    padding: 30px 20px;
 
-header h1 {
-    margin-bottom: 8px;
-}
-
-nav {
-    background-color: #1e8449;
-    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+.autores,
+.orientacao {
+    text-align: center;
+    margin: 10px 0;
 }
 
-nav a:hover {
-    text-decoration: underline;
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+    background-color: white;
 }
 
 section {
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
 }
 
-section h2 {
-    color: #27ae60;
-    border-bottom: 2px solid #27ae60;
-    padding-bottom: 5px;
+h2 {
+    color: #2e7d32;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #1e8449;
-    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    background-color: #eee;
+    padding: 15px;
+    font-size: 0.9em;
 }
